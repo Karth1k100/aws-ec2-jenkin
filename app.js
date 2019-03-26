@@ -3,7 +3,7 @@ var AWS = require('aws-sdk');
 
 var express = require('express');
 var bodyParser = require('body-parser');
-import path from 'path';
+var path = require ('path');
 var movieRouter = require('./routers/movie-router.js');
 //var userRouter = require('./routers/user-router.js');
 //import  movieRouter  from './routers/movie-router.js';
