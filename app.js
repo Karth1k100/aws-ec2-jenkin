@@ -36,7 +36,7 @@ app.get('/', function (req, res) {
     res.status(200).end();
 })
 app.get('/test-endpoint', (req, res) => {
-  res.json({content: 'hello Karthik'});
+  res.json({content: 'hello Webhook'});
 });
 
 app.use('/movies', movieRouter);
