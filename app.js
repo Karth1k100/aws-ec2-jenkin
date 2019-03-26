@@ -13,6 +13,10 @@ AWS.config.region = process.env.REGION
 
 var app = express()
 
+app.use(
+  express.static(path.join(__dirname, 'static'))
+);
+
 app.set('view engine', 'pug')
 app.set('views', __dirname + '/views')
 //app.use(bodyParser.urlencoded({extended:false}))
