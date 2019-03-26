@@ -14,12 +14,14 @@ AWS.config.region = process.env.REGION
 
 var app = express()
 
-app.use(
-  express.static(path.join(__dirname, 'static'))
-);
+
 
 app.set('view engine', 'pug')
 app.set('static', __dirname + '/static')
+
+app.use(
+  express.static(path.join(__dirname, 'static'))
+);
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json());
 
