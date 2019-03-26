@@ -18,8 +18,8 @@ app.use(
   express.static(path.join(__dirname, 'static'))
 );
 
-//app.set('view engine', 'pug')
-//app.set('static', __dirname + '/static')
+app.set('view engine', 'pug')
+app.set('static', __dirname + '/static')
 app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json());
 
