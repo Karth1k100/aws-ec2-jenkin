@@ -40,11 +40,14 @@ pipeline {
                 // go into client-side directory
                 
                         // install node modules
-						sh 'echo Installing Mocha...'
-						sh 'npm install -g mocha'
-						sh 'echo Installing source NPM dependencies...'
+			sh 'echo Installing Mocha...'
+			sh 'npm install -g mocha'
+			sh 'echo Installing source NPM dependencies...'
                         sh 'npm install'
-						sh 'npm install unit.js'
+			sh 'npm install unit.js'
+		        sh 'echo $AWS_ACCESS_KEY'
+	                sh 'echo $AWS_SECRET_ACCESS_KEY'
+	                sh 'echo $MOVIE_API_REGION'
                  
             }
         }
