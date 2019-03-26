@@ -28,7 +28,7 @@ pipeline {
        stage('Download') {
            steps {
               // Download code from a GitHub repository
-              git 'https://github.com/luisgonzalez1/aws-nodejs-eb-codebuild.git'
+              git 'https://github.com/luisgonzalez1/aws-ec2-jenkin.git'
            }
         }
 
