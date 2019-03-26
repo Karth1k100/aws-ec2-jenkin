@@ -22,6 +22,9 @@ pipeline {
               // clean the workspace
               cleanWs()
               sh 'echo $AWS_ACCESS_KEY'
+	      sh 'echo $AWS_SECRET_ACCESS_KEY'
+	      sh 'echo $MOVIE_API_REGION'
+	        
             }
         }
 
