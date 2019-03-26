@@ -23,6 +23,12 @@ app.use(
 //app.use(bodyParser.urlencoded({extended:false}))
 app.use(bodyParser.json());
 
+// log the request being made
+app.use((req, res, next) => {
+  console.log(`request made with path: ${req.path} \nand type: ${req.method}`);
+  next();
+});
+
 app.get('/', function (req, res) {
   res.render('index', {
     title: 'This is a test'
