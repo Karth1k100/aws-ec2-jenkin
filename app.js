@@ -33,7 +33,7 @@ app.use((req, res, next) => {
 
 app.get('/', function (req, res) {
   res.render('index', {
-    title: 'This is a test of webhook 100!!'
+    title: 'This is a test of webhook!!'
     })
     res.status(200).end();
 })
