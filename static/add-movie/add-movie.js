@@ -7,7 +7,7 @@ function addMovie() {
   const movie = {year, title, rating, description};
   console.log(movie);
 
-  fetch('http://ec2-3-85-47-229.compute-1.amazonaws.com:3001/movies',
+  fetch('http://ec2-34-217-30-211.us-west-2.compute.amazonaws.com:3001/movies',
   {
     body: JSON.stringify(movie),
     headers: {
