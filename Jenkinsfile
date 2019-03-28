@@ -31,7 +31,7 @@ pipeline {
        stage('Download') {
            steps {
               // Download code from a GitHub repository
-              git 'https://github.com/luisgonzalez1/aws-ec2-jenkin.git'
+              git 'https://github.com/Karth1k100/aws-ec2-jenkin.git'
            }
         }
 
